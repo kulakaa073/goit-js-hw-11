@@ -9,10 +9,11 @@ const searchButton = document.querySelector('button[type="submit"]');
 const searchForm = document.querySelector('.form');
 
 let loadingMessage = document.querySelector('.loading');
-if (!loadingMessage) {
-    searchForm.insertAdjacentHTML('afterend', '<p class="loading visually-hidden">Loading images, please wait...<span class="loader"></span></p>');
-    loadingMessage = document.querySelector('.loading');
-}
+// moved to html file
+// if (!loadingMessage) {
+//     searchForm.insertAdjacentHTML('afterend', '<p class="loading visually-hidden">Loading images, please wait...<span class="loader"></span></p>');
+//     loadingMessage = document.querySelector('.loading');
+// }
 
 const iziToastNoInputSettings = {
     theme: 'dark',

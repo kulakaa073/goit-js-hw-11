@@ -32,10 +32,11 @@ export default function renderData(data) {
 
 const searchForm = document.querySelector('.form');
 let gallery = document.querySelector('.gallery');
-if (!gallery) {
-    searchForm.insertAdjacentHTML('afterend', '<ul class="gallery"></ul>');
-    gallery = document.querySelector('.gallery');
-}
+// moved to html file
+// if (!gallery) {
+//     searchForm.insertAdjacentHTML('afterend', '<ul class="gallery"></ul>');
+//     gallery = document.querySelector('.gallery');
+// }
 
 const lightboxOptions = {
     captionsData: 'alt',
