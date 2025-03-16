@@ -21,7 +21,7 @@ const iziToastNoInputSettings = {
     position: 'topRight',
     messageColor: '#FAFAFB',
     message: 'Please enter search terms',
-    icon: './img/error-alert.svg',
+    iconUrl: '/img/error-alert.svg',
     iconColor: 'white',
     messageSize: '16px',
     messageLineHeight: '24px',
@@ -34,7 +34,7 @@ const iziToastNoImageSettings = {
     position: 'topRight',
     messageColor: '#FAFAFB',
     message: 'No images found, try again',
-    icon: './img/error-alert.svg',
+    iconUrl: '/img/error-alert.svg',
     iconColor: 'white',
     messageSize: '16px',
     messageLineHeight: '24px',
@@ -108,7 +108,7 @@ searchButton.addEventListener('click', (e) => {
                 renderData(response.data.hits);
             }
             else {
-                iziToast.show({ iziToastNoImageSettings });
+                iziToast.show({ ...iziToastNoImageSettings });
             }
         })
         .catch((error) => {
